@@ -84,7 +84,7 @@ WD-Paruparo
 ```
 
 ## Resources
-*Used as references and examples to learn more things.
+Used as references and examples to learn more things.
 | Title | Purpose | Link |
 | CSS Circular Cropping of Rectangle Image | To learn cropping rectangular images into circles | https://stackoverflow.com/a/49305511 |
 | Show/Hide Elements Depending on Screen Size | To learn how to show and hide elements when condition is fulfilled. Also learned how to use @media screen {} | https://teamtreehouse.com/community/showhide-elements-depending-on-screen-size |
