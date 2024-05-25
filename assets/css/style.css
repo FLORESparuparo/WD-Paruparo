@@ -9,34 +9,88 @@ body {
     color: white;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #3f2d3d;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
-}
-
 /* H E A D E R */
-.header {
-    display: grid;
-    grid-template: auto / auto auto;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0 20px 0;
+header .container {
+    height: 120px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 2px 12px;
+    background-color: #3f2d3d;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 48px black;
+    position: fixed;
 }
 
-.header .dp {
+#header {
+    display: grid;
+    grid-template: 120px / auto auto;
+    justify-content: space-between;
+    margin: 0 20px 0;
+    column-gap: 32px;
+}
+
+#header #right {
+    display: grid;
+    grid-template: auto auto / auto;
+    margin-top: 24px;
+}
+
+#header #right #name {
+    font-size: 30px;
+}
+
+#header #right #occupancy {
+    font-size: 20px;
+    height: max-content;
+    width: max-content;
+    align-content: center;
+    justify-self: end;
+    padding: 4px 12px;;
+    background-color: #5f455d;
+    border-radius: 12px;
+}
+
+#header #left {
     align-content: center;
 }
 
+/* Reference
+https://stackoverflow.com/a/49305511 */
+#header #left img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (max-width: 631px) {
+    #header #right #name {
+        margin-top: -14px;
+    }
+    #header #right #occupancy {
+        justify-self: start;
+    }
+}
+
 /* M A I N */
+main .container {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    padding: 20px;
+    background-color: #3f2d3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+}
+
 .part {
     display: grid;
     grid: auto / auto max-content auto;
     justify-self: space-between;
-    gap: 0 12px;
+    column-gap: 12px;
 }
 
 .part h3 {
@@ -56,18 +110,18 @@ body {
 }
 
 #profile p {
-    margin: 0 20px 0;
+    margin: 16px 20px;
     text-align: justify;
 }
 
 #skills {
     display: grid;
     grid: auto auto / 1fr 1fr 1fr;
-    justify-content: space-around;
-    gap: 0 16px;
+    column-gap: 16px;
+    margin: 16px 20px;
 }
 
-#skills p {
+#skills span {
     margin: 4px;
     padding: 8px 16px;
     background-color: #5f455d;
@@ -78,6 +132,7 @@ body {
 #educ {
     display: grid;
     grid: repeat(5, max-content) / auto;
+    row-gap: 16px;
     justify-self: center;
 }
 
@@ -85,7 +140,7 @@ body {
     display: grid;
     grid: max-content / 1fr auto 1fr;
     margin: 0 20px 0;
-    gap: 0 16px;
+    column-gap: 16px;
 }
 
 #educ .name {
@@ -119,24 +174,81 @@ body {
 }
 
 #career p {
-    margin: 0 20px 0;
+    margin: 16px 20px 0px;
     text-align: justify;
 }
 
 /* F O O T E R */
-.footer {
-    display: grid;
-    grid-template: auto / repeat(4, 1fr);
+footer .container {
+    height: 88px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 2px 12px;
+    background-color: #3f2d3d;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px 4px 48px black;
+    position: fixed;
 }
 
+#footer {
+    display: grid;
+    grid-template: auto / auto minmax(auto, 900px) auto;
+}
 
+#footer nav {
+    display: grid;
+    grid-template: auto / repeat(3, minmax(auto, 100%));
+    grid-column-start: 2;
+    column-gap: 8px;
+}
+
+#footer div {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    width: 220px;
+    padding: 2px 12px;
+    margin: 16px auto;
+    background-color: #5f455d;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+}
+
+#footer img {
+    width: 36px;
+    place-self: center;
+}
+
+#footer span {
+    place-self: center start;
+}
+
+/* Reference
+https://teamtreehouse.com/community/showhide-elements-depending-on-screen-size */
+
+@media screen and (max-width: 777px) {
+    #footer nav {
+        grid-template: auto / 20% 20% 20%;
+        justify-content: center;
+    }
+    #footer div {
+        width: fit-content;
+        height: 48px;
+    }
+    #footer img {
+        grid-row: span 2;
+    }
+    #footer span {
+        display: none;
+    }
+}
 
 /* O U T L I N E */
 /*
-#educ * {
+#header    * {
     outline: green;
     outline-style: dashed;
-    
 }
 /*
 * {
