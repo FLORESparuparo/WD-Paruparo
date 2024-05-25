@@ -77,10 +77,11 @@ https://stackoverflow.com/a/49305511 */
 /* M A I N */
 main .container {
     max-width: 800px;
+    max-height: 615px;
     margin: 20px auto;
-    margin-top: 150px;
-    margin-bottom: 120px;
-    padding: 20px;
+    margin-top: 155px;
+    margin-bottom: 115px;
+    padding: 10px 20px 30px;
     background-color: #3f2d3d;
     border-radius: 8px;
     box-shadow: 0 4px 6px black;
@@ -89,7 +90,6 @@ main .container {
 .part {
     display: grid;
     grid: auto / auto max-content auto;
-    justify-self: space-between;
     column-gap: 12px;
 }
 
@@ -180,7 +180,7 @@ main .container {
 
 /* F O O T E R */
 footer .container {
-    height: 88px;
+    height: 80px;
     left: 0px;
     right: 0px;
     bottom: 0px;
