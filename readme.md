@@ -86,5 +86,6 @@ WD-Paruparo
 ## Resources
 Used as references and examples to learn more things.  
 | No. | Title | Purpose | Link |  
-| 1. | CSS Circular Cropping of Rectangle Image | To learn cropping rectangular images into circles | https://stackoverflow.com/a/49305511 |  
-| 2. | Show/Hide Elements Depending on Screen Size | To learn how to show and hide elements when condition is fulfilled. Also learned how to use @media screen {} | https://teamtreehouse.com/community/showhide-elements-depending-on-screen-size |  
+| 1 | CSS Circular Cropping of Rectangle Image | To learn cropping rectangular images into circles | https://stackoverflow.com/a/49305511 |  
+| 2 | Show/Hide Elements Depending on Screen Size | To learn how to show and hide elements when condition is fulfilled. Also learned how to use @media screen {} | https://teamtreehouse.com/community/showhide-elements-depending-on-screen-size |  
+| 3 | How TO - Fixed Footer | To learn how to give the footer a fixed position at the bottom of the page | https://www.w3schools.com/howto/howto_css_fixed_footer.asp |
